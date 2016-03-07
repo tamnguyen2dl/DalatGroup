@@ -11,7 +11,7 @@
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	font-weight: normal;
-	font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+	font-family: tahoma, Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 }
 h1 {
@@ -364,7 +364,10 @@ body {
 /* Navbar */
 .navbar-cont {
 	margin: 18px 0;
-	background: #333;
+    background: -webkit-linear-gradient(#3ec4f6, #1791dc); 
+    background: -o-linear-gradient(#3ec4f6, #1791dc); 
+    background: -moz-linear-gradient(#3ec4f6, #1791dc); 
+    background: linear-gradient(#3ec4f6, #1791dc);
 }
 .navbar {
 	margin-bottom: 0;
@@ -385,7 +388,7 @@ body {
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
-	font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
 	color: #999;
 	text-shadow: none;
 	text-transform: uppercase;
@@ -423,8 +426,8 @@ body {
 	-o-transition: all linear 0.1s;
 }
 .navbar-inner .nav li:hover {
-	background: #0CC;
-	filter: none;
+	background: #0e8edc;
+	/*filter: none;*/
 }
 .navbar-inner .nav li a {
 	margin-bottom: 0;

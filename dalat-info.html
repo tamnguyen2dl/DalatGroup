@@ -23,24 +23,8 @@
 <script type="text/javascript" src="js/jquery.fancybox.min.js" tppabs="http://www.angelomazzilli.com/Preciso/js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="js/jquery.masonry.min.js" tppabs="http://www.angelomazzilli.com/Preciso/js/jquery.masonry.min.js"></script>
 <script type="text/javascript" src="js/functions.js" tppabs="http://www.angelomazzilli.com/Preciso/js/functions.js"></script>
-<script src="../../maps.googleapis.com/maps/api/js-v=3.exp&sensor=false.js" tppabs="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
-<script type="text/javascript">
-var map;
-function initialize() {
-  var mapOptions = {
-    zoom: 15,
-    center: new google.maps.LatLng(40.714218, -74.006951),
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-    mapOptions);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 </head>
 <body>
-
-
 <!-- Logo --> 
 <a href="#" id="logo"><img src="img/logo.png" tppabs="http://www.angelomazzilli.com/Preciso/img/logo.png" alt="logo" /></a> 
 
@@ -58,8 +42,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
                   <li><a href="index.html" tppabs="http://www.dalatgroup.com/DalatGroup/index.html">Home</a></li>
                   <li><a href="about.html" tppabs="http://www.dalatgroup.com/DalatGroup/about.html">About</a></li>
                   <li><a href="product.html" tppabs="http://www.dalatgroup.com/DalatGroup/product.html">Product</a></li>
-                  <li><a href="dalat-info.html" tppabs="http://www.dalatgroup.com/DalatGroup/dalat-info.html">DaLat</a></li>
-                  <li class="active"><a href="contact.html" tppabs="http://www.dalatgroup.com/DalatGroup/contact.html">Contact</a></li>
+                  <li class="active"><a href="dalat-info.html" tppabs="http://www.dalatgroup.com/DalatGroup/dalat-info.html">DaLat</a></li>
+                  <li><a href="contact.html" tppabs="http://www.dalatgroup.com/DalatGroup/contact.html">Contact</a></li>
                 </ul>
                 
                 <!-- Navbar Search -->
@@ -78,69 +62,79 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </div>
 <hr class="bordered" />
 <div class="container">
-  <div class="row"> 
-    
-    <!-- Contact Page-->
-    <div class="span12"> 
+  <div class="row">
+    <div class="span9"> 
+      
+      <!-- Flex Slider -->
+      <div class="flexslider">
+        <ul class="slides">
+          <li><a href="#"><img src="banner/slider.jpg" tppabs="http://www.angelomazzilli.com/Preciso/banner/slider.jpg" alt="Slider" /></a></li>
+          <li><a href="#"><img src="banner/slider2.jpg" tppabs="http://www.angelomazzilli.com/Preciso/banner/slider2.jpg" alt="Slider" /></a></li>
+        </ul>
+      </div>
       
       <!-- Breadcrumb -->
-      <ul class="breadcrumb">
-        <li><a href="#">Home</a> <span class="divider">/</span></li>
-        <li><a href="#">Pages</a> <span class="divider">/</span></li>
-        <li class="active">Contact</li>
+      <h1>Dalat Info</h1>
+      
+      <!-- Blog List -->
+      <ul class="blog-list">
+        
+        <!-- Single Blog -->
+        <li>
+          <div class="span4 thumbnail"><img src="products/folio-1.jpg" tppabs="http://www.angelomazzilli.com/Preciso/products/folio-1.jpg" alt="Product" />
+            <div class="blog-thumb"><a href="products/folio-1.jpg" tppabs="http://www.angelomazzilli.com/Preciso/products/folio-1.jpg" class="view-fancybox" rel="tag"><i class="icon-camera"></i></a></div>
+          </div>
+          <em class="date">by <a href="#">Admin</a> on <span>April 20th</span>, 2013</em>
+          <h3><a href="#">Lorem Ipsum ispom passage and going through</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, <a href="#">quis nostrud</a> exerci tation ullamcorper suscipit lobortis nisl ut <strong>aliquip ex ea commodo</strong> consequat.</p>
+          <a class="btn btn-primary" href="#">Continue</a> </li>
+        
+        <!-- Single Blog -->
+        <li>
+          <div class="span4 thumbnail"><img src="products/folio-2.jpg" tppabs="http://www.angelomazzilli.com/Preciso/products/folio-2.jpg" alt="Product" />
+            <div class="blog-thumb"><a href="products/folio-2.jpg" tppabs="http://www.angelomazzilli.com/Preciso/products/folio-2.jpg" class="view-fancybox" rel="tag"><i class="icon-camera"></i></a></div>
+          </div>
+          <em class="date">by <a href="#">Admin</a> on <span>April 20th</span>, 2013</em>
+          <h3><a href="#">Lorem Ipsum ispom passage and going through</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, <a href="#">quis nostrud</a> exerci tation ullamcorper suscipit lobortis nisl ut <strong>aliquip ex ea commodo</strong> consequat.</p>
+          <a class="btn btn-primary" href="#">Continue</a> </li>
+        <!-- Single Blog -->
+        <li>
+          <div class="span4 thumbnail"><img src="products/folio-3.jpg" tppabs="http://www.angelomazzilli.com/Preciso/products/folio-3.jpg" alt="Product" />
+            <div class="blog-thumb"><a href="products/folio-3.jpg" tppabs="http://www.angelomazzilli.com/Preciso/products/folio-3.jpg" class="view-fancybox" rel="tag"><i class="icon-camera"></i></a></div>
+          </div>
+          <em class="date">by <a href="#">Admin</a> on <span>April 20th</span>, 2013</em>
+          <h3><a href="#">Lorem Ipsum ispom passage and going through</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, <a href="#">quis nostrud</a> exerci tation ullamcorper suscipit lobortis nisl ut <strong>aliquip ex ea commodo</strong> consequat.</p>
+          <a class="btn btn-primary" href="#">Continue</a> </li>
+        <!-- Single Blog -->
+        <li>
+          <div class="span4 thumbnail"><img src="products/folio-4.jpg" tppabs="http://www.angelomazzilli.com/Preciso/products/folio-4.jpg" alt="Product" />
+            <div class="blog-thumb"><a href="products/folio-4.jpg" tppabs="http://www.angelomazzilli.com/Preciso/products/folio-4.jpg" class="view-fancybox" rel="tag"><i class="icon-camera"></i></a></div>
+          </div>
+          <em class="date">by <a href="#">Admin</a> on <span>April 20th</span>, 2013</em>
+          <h3><a href="#">Lorem Ipsum ispom passage and going through</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, <a href="#">quis nostrud</a> exerci tation ullamcorper suscipit lobortis nisl ut <strong>aliquip ex ea commodo</strong> consequat.</p>
+          <a class="btn btn-primary" href="#">Continue</a> </li>
       </ul>
-      <h1 class="margin-bottom">Contact <span>Us</span></h1>
-    </div>
-  </div>
-  <div class="row"> 
-    
-    <!-- Contact Address -->
-    <div class="span3">
-      <h4 class="margin-bottom">Headquarter</h4>
-      <address>
-      <strong>Twitter, Inc.</strong><br>
-      795 Folsom Ave, Suite 600<br>
-      San Francisco, CA 94107<br>
-      P: (123) 456 7890
-      </address>
-      <address>
-      <strong>Full Name</strong><br>
-      <a href="#">first.last@example.com</a>
-      </address>
     </div>
     
-    <!-- Contact Form -->
-    <div class="span3">
-      <h4 class="margin-bottom">Contact us</h4>
-      <form action="http://www.angelomazzilli.com/Preciso/map-form" class="map-form">
-        <div class="control-group">
-          <label class="control-label">Name</label>
-          <div class="controls">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="City">
-            <input type="text" placeholder="Email">
-          </div>
-        </div>
-        <div class="control-group">
-          <label class="control-label">Message</label>
-          <div class="controls">
-            <textarea rows="3"></textarea>
-          </div>
-        </div>
-        <div class="control-group no-margin">
-          <div class="controls">
-            <button type="submit" class="btn">Send</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    
-    <!-- Contact Map -->
-    <div class="span6 margin-bottom">
-      <div id="map-canvas" style="width: 100%; height: 360px;"></div>
+    <!-- Sidebar -->
+    <div class="span3 sidebar">
+      <h3>Categories</h3>
+      <ul class="nav nav-stacked">
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Wordpress</a></li>
+        <li><a href="#">Template</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Mobile</a></li>
+      </ul>
+      <h3>Widget Text</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam <strong>nonummy nibh</strong> euismod tincidunt ut laoreet <a href="#">dolore magna</a> aliquam erat volutpat.</p>
     </div>
   </div>
 </div>
+
 
 
 
@@ -177,6 +171,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
     </div>
   </div>
 </div>
+
+
 <!-- Copy -->
 <div class="copy">
   <div class="container">
